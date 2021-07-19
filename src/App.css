@@ -1,0 +1,161 @@
+@font-face {
+  font-family: Rubik;
+  src: url(./font/Rubik-Regular.ttf);
+}
+
+*,*::after,*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Rubik;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App{
+  display: flex;
+}
+
+.page-breadcrumb{
+  padding: 2rem 2.5rem 0;
+}
+
+.d-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-content-around{
+  justify-content: space-around !important;
+}
+
+.optionCustom select{
+    color: #b8c3d5;
+    padding: .5rem 1rem;
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 2px 9px 0 rgb(169 184 200 / 20%)
+}
+
+.page-title{
+  color: #1c2d41;
+  font-size: 1.325rem;
+  font-weight: bold;
+  margin-bottom: .25rem;
+}
+
+.page-subtitle{
+  font-size: .875rem;
+  color: #7c8798;
+  font-weight: 600;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mr1{
+  margin-right: .5rem !important;
+}
+
+.mb1{
+  margin-bottom: .5rem !important;
+}
+
+.mt1{
+  margin-top: .5rem !important;
+}
+
+.mt2{
+  margin-top: 1.25rem !important;
+}
+
+.mt3{
+  margin-top: 2rem !important;
+}
+
+.ml1{
+  margin-left: .5rem !important;
+}
+
+.margin-lr-auto{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.text-dark{
+  color: #1c2d41!important;
+}
+
+.text-muted{
+  color: #9eabc0!important;
+}
+
+.roundedImage{
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navSection{
+  width: 28%;
+  height: 100vh;
+  position: fixed;
+  top: 0%;
+  left: 0;
+}
+
+.MainSection{
+  width: 72%;
+  margin-left: 28%;
+}
+
+
+@media (min-width: 576px) {
+  .navSection {
+    max-width: 200px;
+  }
+  .MainSection{
+    margin-left: 200px;
+    width: calc(100vw - 240px);
+  }
+}
+
+@media (min-width: 768px) {
+  .navSection {
+    max-width: 240px;
+  }
+  .MainSection{
+    width: calc(100vw - 240px);
+    margin-left: 240px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navSection {
+    max-width: 280px;
+  }
+  .MainSection{
+    width: calc(100vw -280px);
+    margin-left: 280px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navSection {
+    max-width: 320px;
+  }
+  .MainSection{
+    width: calc(100vw - 320px);
+    margin-left: 320px;
+  }
+}
